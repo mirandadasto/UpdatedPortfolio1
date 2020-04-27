@@ -7,32 +7,39 @@
     <title>Contact</title>
 
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 <body>
 
-    <div class="background">
+    <div class="container">
 
         <header>
-            <h1>Miranda D'Asto</h1>
-            <nav>
-                <a href="index.html">About</a>   |
-                <a href="portfolio.html">Portfolio</a>   |
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
+            <div class = "row" id = "header-row">
 
-        <div class="container">
+                <div class = "col-12">
+                    <h1>Miranda D'Asto</h1>
+                    <nav>
+                        <a href="index.html">About</a>   |
+                        <a href="portfolio.html">Portfolio</a>   |
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>  <!--  End of col-12 row for header -->  
 
-            <div class="aboutMe">
-                <div class="row">
-                    <h2>Contact</h2>
-                </div>
-            </div>
+            </div> <!--  End of header-row -->   
+        </header> <!--  End of header -->
 
-            <div class="row">
+
+        <div class="row" id = "contact">
+            <div class="col-12">
+                <h2>Contact</h2>
+            </div> <!--  End of col-12 row for contact -->
+        </div> <!--  End of contact row -->
+
+        <div class="row" id = "contactInfoRow">
+            <div class = col-12 id = "entireContactForm"> 
+
                 <form>
                     <label for="Name">Name</label> <br>
                     <input type="text" id="Name" placeholder="John Smith"> <br><br>
@@ -44,22 +51,16 @@
                     <textarea></textarea> <br> <br>
 
                     <button type="button" >Submit</button>
-                       
-                </form>
+                </form> <!--  End of form -->
 
-            </div> <!--End of row class-->
-
-        </div> <!--End of container class -->
-
-        <div class="aboveFooter">
-            <div class="row"></div>
-        </div>
+            </div>  <!--End of col entireContactForm-->  
+        </div> <!--End of row contactInfoRow-->
 
         <footer>
             Copyright®
         </footer>
 
-    </div> <!--End of background class-->
+    </div> <!--End of container class -->
 
 </body>
 </html>

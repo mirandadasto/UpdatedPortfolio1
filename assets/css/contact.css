@@ -12,6 +12,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, Helvetica, sans-serif;
+    clear: both;
+    width: 960px;
+    margin: 0 auto;
 }
 
 header {
@@ -56,61 +61,33 @@ a:active {
     text-decoration: none;
 }
 
-.container {
-    background-color: lightgray;
-    font-family: Arial, Helvetica, Helvetica, sans-serif;
-    clear: both;
-    width: 960px;
-    margin: 0 auto;
-}
-
 .row {
     background-color: #ffffff;
-    padding: 15px;
+    padding: 10px;
 }
 
-
-#aboutMe {
+#contact {
     border-bottom: solid;
     border-color: #cccccc;
 }
 
-#aboutMe h2 {
+#contact h2 {
     background-color: white;
     color: #4aaaa5;
     font-size: 30px;
     font-weight: bold;
-    float: left;
-    position: relative;
     padding: 10px 0px 0px 10px;
 }
 
-h2 {
-    color:#4aaaa5;
-    font-weight: bolder;
-    border-color: #cccccc;
-    font-size: 30px;
-}
-
-#bio {
-    background-color: #ffffff;
-    padding: 20px 20px 20px 20px;
-}
-
-p {
+form {
     color: grey;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
-.clearfix img {
-    display: block;
-    width: 20%;
-    float: left;
-    padding: 0px 20px 10px 10px;
+#entireContactForm {
+    padding-left: 10px 0px 0px 10px;
 }
-
-.clearfix {
-    overflow: auto;
-    }
 
 footer {
     position: fixed;
@@ -147,26 +124,11 @@ input {
     width: 100%;
 }
 
-.col-md-4 img {
-    display: block;
-    width: 100%
+textarea {
+    width: 100%;
 }
-
-.col-md-4 p {
-    color: #ffffff;
-    background-color: #4aaaa5;
-    padding: 6px;
-    position: relative;
-    top: -50px;
-    text-align: center;
-}
-
 
 @media only screen and (max-width: 800px) {
-
-    .row {
-        padding: 10;
-    }
 
     #header-row {
         margin: 10px 0px 0px 10px;
@@ -191,11 +153,11 @@ input {
         padding: 0px 27% 0px 0px;
     }
 
-    #aboutMe {
-        margin: 0px 0px -10px 0px;
+    #contact {
+        margin: 0px 0px 0px 0px;
     }
 
-    #aboutMe h2 {
+    #contact h2 {
         background-color: white;
         color: #4aaaa5;
         font-size: 30px;
@@ -205,10 +167,14 @@ input {
         padding: 0px 0px 0px 35%;
     }
 
-    #bio {
+    form {
         background-color: #ffffff;
-        padding: 20px 20px 20px 20px;
-        margin: 10px 0px 10px 0px;
+        padding: 20px 20px 60px 20px;
+        margin: 0px 0px 10px 0px;
+    }
+
+    #contactInfoRow {
+        margin: 0px 0px 10px 0px;
     }
 
     footer {
@@ -225,7 +191,4 @@ input {
         color: #ffffff;
         margin-top: 10px;
     }
-
 }
-
-
