@@ -1,4 +1,3 @@
-
 body {
     background-image: url("../images/textured_paper.png");
     background-repeat: no-repeat;
@@ -67,12 +66,12 @@ a:active {
 }
 
 
-#aboutMe {
+#portfolio {
     border-bottom: solid;
     border-color: #cccccc;
 }
 
-#aboutMe h2 {
+#portfolio h2 {
     background-color: white;
     color: #4aaaa5;
     font-size: 30px;
@@ -82,25 +81,15 @@ a:active {
     padding: 10px 0px 0px 10px;
 }
 
-#bio {
+#projectHolderBox {
     background-color: #ffffff;
-    padding: 20px 20px 20px 20px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
-p {
-    color: grey;
+#projectLink {
+    color: white;
 }
-
-.clearfix img {
-    display: block;
-    width: 20%;
-    float: left;
-    padding: 0px 20px 10px 10px;
-}
-
-.clearfix {
-    overflow: auto;
-    }
 
 footer {
     position: fixed;
@@ -128,4 +117,65 @@ footer {
     position: relative;
     top: -50px;
     text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+    #header-row {
+        margin: 10px 0px 0px 10px;
+    }
+
+    h1 {
+        background-color: #4aaaa5;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        float: none;
+        width: auto;
+        padding: 0px 0px 0px 20%;
+    }
+
+    nav {
+        color:#cccccc;
+        float: right;
+        position: relative;
+        display: flex;
+        margin-top: 10px;
+        padding: 0px 27% 0px 0px;
+    }
+
+    #portfolio {
+        margin: 0px 0px 0px 0px;
+    }
+
+    #portfolio h2 {
+        background-color: white;
+        color: #4aaaa5;
+        font-size: 30px;
+        font-weight: bold;
+        float: left;
+        position: center; 
+        padding: 0px 0px 0px 35%;
+    }
+
+    #projectHolderBox {
+        background-color: #ffffff;
+        padding: 20px 20px 60px 20px;
+        margin: 0px 0px 10px 0px;
+    }
+
+        footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #666666;
+        border-top: 8px solid #4aaaa5;
+        padding: 20px;
+        font-size: 8px;
+        color: black;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 10px;
+    }
 }
